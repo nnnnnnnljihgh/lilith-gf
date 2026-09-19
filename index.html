@@ -1334,13 +1334,11 @@ $('portraitImg').onerror = function(){ this.onerror=null; this.src=FALLBACK_PORT
 /* 手机软键盘弹出时，把聊天区高度收缩到可视视口，保证输入框可见 */
 var appEl = document.querySelector('.app');
 if(window.visualViewport){
+  var vv = window.visualViewport;
   function fitViewport(){
-    var h = window.visualViewport.height;
-    appEl.style.height = h + 'px';
-    scrollBottom();
+    appEl.style.height = vv.height + 'px';
   }
-  window.visualViewport.addEventListener('resize', fitViewport);
-  window.visualViewport.addEventListener('scroll', fitViewport);
+  vv.addEventListener('resize', fitViewport);
   fitViewport();
 }
 
