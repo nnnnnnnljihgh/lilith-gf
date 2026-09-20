@@ -1,0 +1,19 @@
+{
+  "name": "莉莉丝 · 我的女友",
+  "short_name": "莉莉丝",
+  "description": "莉莉丝·克罗塞尔，你的傲娇魅魔女友",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c0713",
+  "theme_color": "#0c0713",
+  "icons": [
+    {
+      "src": "https://aka.doubaocdn.com/s/0W2XEqZ0sJ",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
